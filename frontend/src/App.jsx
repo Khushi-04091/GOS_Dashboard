@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+const API_URL =
+    import.meta.env.VITE_API_URL || "http://localhost:5000";
 import "./App.css";
 
 import {
@@ -132,7 +134,8 @@ const operatingConnections = gosConnections.filter(
 
     useEffect(() => {
 
-        fetch("http://localhost:5000/api/actors")
+      
+            fetch(API_URL + "/api/actors")
 
             .then((response) => response.json())
 
@@ -156,7 +159,7 @@ const operatingConnections = gosConnections.filter(
 
     useEffect(() => {
 
-        fetch("http://localhost:5000/api/metrics")
+           fetch(API_URL + "/api/metrics")
 
             .then((response) => response.json())
 
@@ -180,7 +183,7 @@ const operatingConnections = gosConnections.filter(
 
     useEffect(() => {
 
-        fetch("http://localhost:5000/api/operating-units")
+       fetch(API_URL + "/api/operating-units")
 
             .then((response) => response.json())
 
@@ -204,7 +207,7 @@ const operatingConnections = gosConnections.filter(
 
     useEffect(() => {
 
-        fetch("http://localhost:5000/api/vatika-stages")
+        fetch(API_URL + "/api/vatika-stages")
 
             .then((response) => response.json())
 
@@ -227,8 +230,9 @@ const operatingConnections = gosConnections.filter(
     // =========================
 
     useEffect(() => {
-
-        fetch("http://localhost:5000/api/vatika-stage-summary")
+       
+      fetch(API_URL + "/api/vatika-stage-summary")
+        
 
             .then((response) => response.json())
 
@@ -252,8 +256,7 @@ const operatingConnections = gosConnections.filter(
 
     useEffect(() => {
 
-        fetch("http://localhost:5000/api/gos-connections")
-
+        fetch(API_URL + "/api/gos-connections")
             .then((response) => response.json())
 
             .then((data) => {
@@ -269,7 +272,7 @@ const operatingConnections = gosConnections.filter(
 
     }, []);
     useEffect(() => {
-    fetch("http://localhost:5000/api/gos-relationship-summary")
+       fetch(API_URL + "/api/gos-relationship-summary")
         .then((response) => response.json())
         .then((data) => {
             setGosRelationshipSummary(data);
@@ -289,7 +292,7 @@ const operatingConnections = gosConnections.filter(
 
     useEffect(() => {
 
-        fetch("http://localhost:5000/api/vatika-lifecycle")
+       fetch(API_URL + "/api/vatika-lifecycle")
 
             .then((response) => response.json())
 
@@ -313,7 +316,7 @@ const operatingConnections = gosConnections.filter(
 
     useEffect(() => {
 
-        fetch("http://localhost:5000/api/stage-movements")
+     fetch(API_URL + "/api/stage-movements")
 
             .then((response) => response.json())
 
@@ -337,7 +340,7 @@ const operatingConnections = gosConnections.filter(
 
     useEffect(() => {
 
-        fetch("http://localhost:5000/api/geographic-impact")
+       fetch(API_URL + "/api/geographic-impact")
 
             .then((response) => response.json())
 
@@ -361,7 +364,7 @@ const operatingConnections = gosConnections.filter(
 
     useEffect(() => {
 
-        fetch("http://localhost:5000/api/product-categories")
+       fetch(API_URL + "/api/product-categories")
 
             .then((response) => response.json())
 
@@ -386,7 +389,8 @@ const operatingConnections = gosConnections.filter(
 
     useEffect(() => {
 
-        fetch("http://localhost:5000/api/training-categories")
+       fetch(API_URL + "/api/training-categories")
+
 
             .then((response) => response.json())
 
@@ -410,7 +414,7 @@ const operatingConnections = gosConnections.filter(
 
     useEffect(() => {
 
-        fetch("http://localhost:5000/api/pl-overview")
+     fetch(API_URL + "/api/pl-overview")
 
             .then((response) => response.json())
 
