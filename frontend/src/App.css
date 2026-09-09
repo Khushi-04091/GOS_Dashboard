@@ -1,0 +1,2372 @@
+.app {
+    min-height: 100vh;
+    padding: 40px;
+    background: #f4f7fb;
+    font-family: Arial, sans-serif;
+}
+
+.app h1 {
+    margin-bottom: 30px;
+}
+
+/* =========================
+   People / Actors
+   ========================= */
+
+.actors-card {
+    width: 700px;
+    margin-top: 30px;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.actors-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.actors-header h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #1f3550;
+}
+
+.actors-total {
+    font-size: 12px;
+    color: #287bc7;
+    font-weight: 600;
+}
+
+.actors-header .view-all {
+    margin-left: auto;
+    font-size: 11px;
+    color: #1976d2;
+    cursor: pointer;
+}
+
+.actors-list {
+    width: 100%;
+}
+
+.actor-row {
+    display: grid;
+    grid-template-columns: 125px 1fr 60px;
+    align-items: center;
+    gap: 10px;
+    min-height: 27px;
+}
+
+.actor-name {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 11px;
+    color: #34495e;
+}
+
+.actor-icon {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.actor-progress {
+    height: 8px;
+    background: #edf0f2;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.actor-progress-fill {
+    height: 100%;
+    border-radius: 3px;
+    background: #5aa0e6;
+    transition: width 0.3s ease;
+}
+
+.actor-row:nth-child(2) .actor-progress-fill {
+    background: #e98bb7;
+}
+
+.actor-row:nth-child(3) .actor-progress-fill {
+    background: #e9b27c;
+}
+
+.actor-row:nth-child(4) .actor-progress-fill {
+    background: #7bc8ae;
+}
+
+.actor-row:nth-child(5) .actor-progress-fill {
+    background: #9daed0;
+}
+
+.actor-row:nth-child(6) .actor-progress-fill {
+    background: #a8b9d9;
+}
+
+.actor-row:nth-child(7) .actor-progress-fill {
+    background: #7aa8e8;
+}
+
+.actor-row:nth-child(8) .actor-progress-fill {
+    background: #b77de0;
+}
+
+.actor-row:nth-child(9) .actor-progress-fill {
+    background: #bd80e5;
+}
+
+.actor-row:nth-child(10) .actor-progress-fill {
+    background: #65b8eb;
+}
+
+.actor-row:nth-child(11) .actor-progress-fill {
+    background: #b7b7b7;
+}
+
+.actor-row:nth-child(12) .actor-progress-fill {
+    background: #e36c6c;
+}
+
+.actor-row:nth-child(13) .actor-progress-fill {
+    background: #f06d6d;
+}
+
+.actor-row:nth-child(14) .actor-progress-fill {
+    background: #8b58d6;
+}
+
+.actor-row:nth-child(15) .actor-progress-fill {
+    background: #c6cdd5;
+}
+
+.actor-count {
+    text-align: right;
+    font-size: 11px;
+    color: #34495e;
+    font-weight: 500;
+}
+/* =========================
+   Impact at a Glance
+   ========================= */
+
+.metrics-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0;
+    margin-bottom: 30px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #e5e9ee;
+    overflow: hidden;
+}
+
+.metric-card {
+    background: white;
+    padding: 8px 10px;
+    min-height: 72px;
+    border-right: 1px solid #e5e9ee;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.metric-card:last-child {
+    border-right: none;
+}
+
+.metric-card h3 {
+    margin: 0 0 4px;
+    font-size: 10px;
+    font-weight: 600;
+    color: #26384d;
+    line-height: 1.2;
+}
+
+.metric-card p {
+    margin: 0 0 2px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #172b4d;
+}
+
+.metric-card span {
+    color: #16834b;
+    font-size: 9px;
+     font-weight: 700;
+}
+
+.operating-units-card {
+    width: 400px;
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.operating-units-card h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.operating-unit-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.operating-unit-row:last-child {
+    border-bottom: none;
+}
+
+.vatika-stages-card {
+    width: 700px;
+    margin-top: 30px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #e5e9ee;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.vatika-stages-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.vatika-stages-header h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #1f3550;
+}
+
+.vatika-stages-header .view-all {
+    margin-left: auto;
+    font-size: 11px;
+    color: #1976d2;
+    cursor: pointer;
+}
+
+.vatika-stage-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.vatika-donut-container {
+    position: relative;
+    width: 190px;
+    height: 190px;
+    min-width: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vatika-donut-total {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vatika-donut-total strong {
+    font-size: 20px;
+    color: #1f3550;
+}
+
+.vatika-donut-total span {
+    font-size: 9px;
+    color: #687789;
+}
+
+.vatika-stage-legend {
+    flex: 1;
+}
+
+.vatika-legend-row {
+    display: grid;
+    grid-template-columns: 10px 1fr 55px 45px;
+    align-items: center;
+    gap: 7px;
+    min-height: 32px;
+    font-size: 10px;
+}
+
+.vatika-legend-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.vatika-legend-name {
+    color: #34495e;
+}
+
+.vatika-legend-row strong {
+    text-align: right;
+    color: #26384d;
+}
+
+.vatika-legend-percentage {
+    text-align: right;
+    color: #687789;
+}
+
+.vatika-stage-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.vatika-summary-box {
+    background: #f7f9fb;
+    border: 1px solid #e5e9ee;
+    border-radius: 6px;
+    padding: 9px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.vatika-summary-box span {
+    font-size: 9px;
+    color: #687789;
+}
+
+.vatika-summary-box strong {
+    font-size: 13px;
+    color: #1f3550;
+}
+.vatika-stage-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.vatika-stage-row:last-child {
+    border-bottom: none;
+}
+.vatika-lifecycle-card {
+    width: 700px;
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.vatika-lifecycle-card h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.lifecycle-header,
+.lifecycle-row {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1.2fr 1.5fr;
+    gap: 15px;
+    align-items: center;
+}
+
+.lifecycle-header {
+    font-size: 12px;
+    font-weight: bold;
+    color: #555;
+    padding-bottom: 10px;
+}
+
+.lifecycle-row {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+.lifecycle-row:last-child {
+    border-bottom: none;
+}
+
+.stage-movement-card {
+    width: 700px;
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.stage-movement-card h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.stage-movement-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.stage-movement-row:last-child {
+    border-bottom: none;
+}
+
+.stage-movement-row h3 {
+    margin: 0 0 6px;
+    font-size: 15px;
+}
+
+.stage-movement-row p {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.movement-change {
+    color: green;
+    font-size: 14px;
+}
+
+.geographic-card {
+    width: 700px;
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.geographic-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.geographic-header h2 {
+    margin: 0;
+}
+
+.geographic-header select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.india-map {
+    width: 100%;
+    height: 450px;
+    border-radius: 8px;
+}
+.geographic-card {
+    width: 700px;
+    margin-top: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.geographic-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.geographic-header h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.geographic-header select {
+    padding: 7px 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: white;
+}
+
+/* Map wrapper */
+.map-container {
+    position: relative;
+    height: 450px;
+}
+
+.india-map {
+    width: 100%;
+    height: 100%;
+}
+
+/* Legend */
+.impact-legend {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    z-index: 1000;
+
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+    font-size: 12px;
+}
+
+.impact-legend h4 {
+    margin: 0 0 8px;
+    font-size: 13px;
+}
+
+.impact-legend div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 6px 0;
+}
+
+.legend-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.legend-dot.green {
+    background: green;
+}
+
+.legend-dot.blue {
+    background: #2196f3;
+}
+
+.legend-dot.yellow {
+    background: gold;
+}
+
+.legend-dot.red {
+    background: red;
+}
+
+/* Bottom statistics */
+.geographic-stats {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border-top: 1px solid #eee;
+}
+
+.geo-stat {
+    text-align: center;
+    padding: 10px 5px;
+    border-right: 1px solid #eee;
+}
+
+.geo-stat:last-child {
+    border-right: none;
+}
+
+.geo-stat strong {
+    display: block;
+    font-size: 15px;
+}
+
+.geo-stat span {
+    display: block;
+    margin-top: 3px;
+    font-size: 11px;
+    color: #666;
+}
+.geographic-card {
+    width: 700px;
+    margin-top: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.geographic-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.geographic-header h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.geographic-header select {
+    padding: 7px 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: white;
+}
+
+/* Map wrapper */
+.map-container {
+    position: relative;
+    height: 450px;
+}
+
+.india-map {
+    width: 100%;
+    height: 100%;
+}
+
+/* Legend */
+.impact-legend {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    z-index: 1000;
+
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+    font-size: 12px;
+}
+
+.impact-legend h4 {
+    margin: 0 0 8px;
+    font-size: 13px;
+}
+
+.impact-legend div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 6px 0;
+}
+
+.legend-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.legend-dot.green {
+    background: green;
+}
+
+.legend-dot.blue {
+    background: #2196f3;
+}
+
+.legend-dot.yellow {
+    background: gold;
+}
+
+.legend-dot.red {
+    background: red;
+}
+
+/* Bottom statistics */
+.geographic-stats {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border-top: 1px solid #eee;
+}
+
+.geo-stat {
+    text-align: center;
+    padding: 10px 5px;
+    border-right: 1px solid #eee;
+}
+
+.geo-stat:last-child {
+    border-right: none;
+}
+
+.geo-stat strong {
+    display: block;
+    font-size: 15px;
+}
+
+.geo-stat span {
+    display: block;
+    margin-top: 3px;
+    font-size: 11px;
+    color: #666;
+}
+
+.products-card {
+    width: 700px;
+    margin-top: 30px;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products-header h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.view-all {
+    font-size: 12px;
+    color: #1976d2;
+    cursor: pointer;
+}
+
+.product-tabs {
+    display: flex;
+    gap: 8px;
+    margin: 12px 0;
+}
+
+.product-tabs button {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #f1f3f5;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.product-tabs .active-tab {
+    background: #1976d2;
+    color: white;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.product-item {
+    min-height: 105px;
+    padding: 10px;
+    background: #faf8ed;
+    border: 1px solid #e8e2c9;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.product-icon {
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+.product-name {
+    font-size: 11px;
+    font-weight: 600;
+    min-height: 28px;
+}
+
+.product-count {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+.product-label {
+    font-size: 10px;
+    color: #666;
+    margin-top: 2px;
+}
+.training-card {
+    width: 700px;
+    margin-top: 30px;
+    background: white;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.training-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.training-header h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.training-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.training-chart {
+    width: 280px;
+    height: 220px;
+    position: relative;
+}
+
+.training-total {
+    position: absolute;
+    top: 50%;
+    left: 125px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.training-total strong {
+    display: block;
+    font-size: 22px;
+}
+
+.training-total span {
+    font-size: 12px;
+    color: #666;
+}
+
+.training-legend {
+    flex: 1;
+}
+
+.training-legend-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+.training-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.training-legend-row:nth-child(1) .training-dot {
+    background: #4169E1;
+}
+
+.training-legend-row:nth-child(2) .training-dot {
+    background: #FF8C32;
+}
+
+.training-legend-row:nth-child(3) .training-dot {
+    background: #2CB67D;
+}
+
+.training-legend-row:nth-child(4) .training-dot {
+    background: #F2C94C;
+}
+
+.training-legend-row:nth-child(5) .training-dot {
+    background: #9B6DDB;
+}
+
+.training-legend-row:nth-child(6) .training-dot {
+    background: #4AADE8;
+}
+
+.training-category {
+    flex: 1;
+}
+
+/* P & L Overview */
+
+.pl-card {
+    width: 700px;
+    margin-top: 30px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid #e05a5a;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.pl-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pl-header h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.pl-tabs {
+    display: flex;
+    gap: 8px;
+    margin: 12px 0;
+}
+
+.pl-tabs button {
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    background: #f1f3f5;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.pl-tabs .active-pl-tab {
+    background: #1d5d91;
+    color: white;
+}
+
+.pl-table {
+    width: 100%;
+}
+
+.pl-table-header,
+.pl-table-row,
+.pl-total-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.4fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.pl-table-header {
+    padding: 10px 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #1f3550;
+}
+
+.pl-table-row {
+    padding: 9px 5px;
+    border-top: 1px solid #eee;
+    font-size: 12px;
+}
+
+.pl-table-row span:nth-child(n+2),
+.pl-total-row strong:nth-child(n+2) {
+    text-align: center;
+}
+
+.pl-surplus {
+    color: #16834b;
+    background: #e4f6eb;
+    padding: 5px 8px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.pl-deficit {
+    color: #d62828;
+    background: #fde8e8;
+    padding: 5px 8px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.pl-total-row {
+    padding: 12px 5px 5px;
+    margin-top: 4px;
+    border-top: 2px solid #ddd;
+    font-size: 13px;
+}
+/* =========================
+   Explore GOS
+   ========================= */
+
+.explore-gos-card {
+    width: 700px;
+    margin-top: 30px;
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.explore-gos-header {
+    margin-bottom: 10px;
+}
+
+.explore-gos-header h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #142b44;
+}
+
+.explore-gos-header p {
+    margin: 3px 0 0;
+    font-size: 11px;
+    color: #687789;
+}
+
+.explore-gos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.explore-item {
+    min-height: 88px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 7px;
+    padding: 9px 8px;
+    background: #ffffff;
+    border: 1px solid #e2e7ed;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.explore-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.10);
+}
+
+.explore-icon {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #e9f6f1;
+    font-size: 18px;
+}
+
+.explore-content {
+    padding-right: 2px;
+}
+
+.explore-content h3 {
+    margin: 1px 0 4px;
+    font-size: 11px;
+    color: #26384d;
+    line-height: 1.2;
+}
+
+.explore-content p {
+    margin: 0;
+    font-size: 9px;
+    line-height: 1.3;
+    color: #667586;
+}
+
+.explore-arrow {
+    position: absolute;
+    left: 8px;
+    bottom: 7px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #f1f4f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    color: #26384d;
+}
+.explore-icon svg {
+    stroke-width: 1.8;
+}
+.metrics-section {
+    margin-bottom: 30px;
+}
+
+.metrics-header {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 5px;
+}
+
+.metrics-header h2 {
+    margin: 0;
+    font-size: 13px;
+    color: #1d3557;
+}
+
+.metrics-header span {
+    font-size: 11px;
+    color: #687789;
+}
+
+/* =========================
+   Welcome GOS Banner
+   ========================= */
+
+.welcome-gos-banner {
+    width: 100%;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.welcome-gos-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.metric-card {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.metric-icon {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.metric-details {
+    display: flex;
+    flex-direction: column;
+}
+.metric-card:nth-child(1) .metric-icon {
+    background: #dff7ed;
+    color: #159447;
+}
+
+.metric-card:nth-child(2) .metric-icon {
+    background: #e2f1ff;
+    color: #287bc7;
+}
+
+.metric-card:nth-child(3) .metric-icon {
+    background: #eadfff;
+    color: #7b3fc6;
+}
+
+.metric-card:nth-child(4) .metric-icon {
+    background: #fff0df;
+    color: #f28c28;
+}
+
+.metric-card:nth-child(5) .metric-icon {
+    background: #ffe3ea;
+    color: #d82f4d;
+}
+
+.metric-card:nth-child(6) .metric-icon {
+    background: #fff2cf;
+    color: #e2a300;
+}
+
+.metric-card:nth-child(7) .metric-icon {
+    background: #dff0ff;
+    color: #287bc7;
+}
+.metric-subtext {
+    margin-top: 2px;
+    font-size: 8px;
+    color: #687789;
+}
+/* =========================
+   Operating Units
+   ========================= */
+
+.operating-units-card {
+    width: 700px;
+    margin-top: 30px;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.operating-units-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.operating-units-header h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #1f3550;
+}
+
+.operating-units-total {
+    margin-left: 8px;
+    font-size: 12px;
+    color: #287bc7;
+    font-weight: 600;
+}
+
+.operating-units-header .view-all {
+    margin-left: auto;
+    font-size: 11px;
+    color: #1976d2;
+}
+
+.operating-units-list {
+    width: 100%;
+}
+
+.operating-unit-row {
+    display: grid;
+    grid-template-columns: 125px 1fr 60px;
+    align-items: center;
+    gap: 10px;
+    min-height: 27px;
+}
+
+.operating-unit-name {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    color: #34495e;
+}
+
+.operating-unit-icon {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.operating-unit-progress {
+    height: 8px;
+    background: #edf0f2;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.operating-unit-progress-fill {
+    height: 100%;
+    border-radius: 3px;
+    background: #72b7e8;
+}
+
+/* Different bar colors */
+
+.operating-unit-row:nth-child(2) .operating-unit-progress-fill {
+    background: #9b9fd4;
+}
+
+.operating-unit-row:nth-child(3) .operating-unit-progress-fill {
+    background: #7bc8ae;
+}
+
+.operating-unit-row:nth-child(4) .operating-unit-progress-fill {
+    background: #79c8a5;
+}
+
+.operating-unit-row:nth-child(5) .operating-unit-progress-fill {
+    background: #f39b88;
+}
+
+.operating-unit-row:nth-child(6) .operating-unit-progress-fill {
+    background: #ff9c83;
+}
+
+.operating-unit-row:nth-child(7) .operating-unit-progress-fill {
+    background: #8b6dd8;
+}
+
+.operating-unit-row:nth-child(8) .operating-unit-progress-fill {
+    background: #9b6ee0;
+}
+
+.operating-unit-row:nth-child(9) .operating-unit-progress-fill {
+    background: #f2a52e;
+}
+
+.operating-unit-row:nth-child(10) .operating-unit-progress-fill {
+    background: #f0a42c;
+}
+
+.operating-unit-row:nth-child(11) .operating-unit-progress-fill {
+    background: #70b5e5;
+}
+
+.operating-unit-row:nth-child(12) .operating-unit-progress-fill {
+    background: #76b8e8;
+}
+
+.operating-unit-row:nth-child(13) .operating-unit-progress-fill {
+    background: #f0808d;
+}
+
+.operating-unit-row:nth-child(14) .operating-unit-progress-fill {
+    background: #8bcf9c;
+}
+
+.operating-unit-row:nth-child(15) .operating-unit-progress-fill {
+    background: #c5ccd4;
+}
+
+.operating-unit-count {
+    text-align: right;
+    font-size: 11px;
+    color: #34495e;
+    font-weight: 500;
+}
+
+.newly-promoted-box {
+    background: #f1fbf4;
+    border-color: #d9f2df;
+}
+
+.newly-promoted-box span {
+    color: #16834b;
+}
+
+.newly-promoted-box strong {
+    color: #16834b;
+}
+
+.newly-promoted-box small {
+    color: #16834b;
+    font-size: 9px;
+    margin-top: 2px;
+}
+
+.at-risk-box {
+    background: #fff4f4;
+    border-color: #f5d6d6;
+}
+
+.at-risk-box span {
+    color: #d62828;
+}
+
+.at-risk-box strong {
+    color: #d62828;
+}
+
+.at-risk-box small {
+    color: #d62828;
+    font-size: 9px;
+    margin-top: 2px;
+}
+.vatika-lifecycle-card {
+    width: 700px;
+    margin-top: 30px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #e5e9ee;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.vatika-lifecycle-card h2 {
+    margin: 0 0 15px;
+    font-size: 18px;
+    color: #1f3550;
+}
+
+.vatika-lifecycle-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Funnel */
+
+.lifecycle-funnel {
+    width: 70px;
+    min-width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2px;
+}
+
+.funnel-stage {
+    height: 24px;
+    margin-bottom: 1px;
+    clip-path: polygon(8% 0, 92% 0, 82% 100%, 18% 100%);
+}
+
+.funnel-stage-0 {
+    width: 58px;
+    background: #b8c5d1;
+}
+
+.funnel-stage-1 {
+    width: 52px;
+    background: #b8c5d1;
+}
+
+.funnel-stage-2 {
+    width: 45px;
+    background: #f5b400;
+}
+
+.funnel-stage-3 {
+    width: 37px;
+    background: #63ad3d;
+}
+
+.funnel-stage-4 {
+    width: 29px;
+    background: #17a6a6;
+}
+
+.funnel-stage-5 {
+    width: 20px;
+    background: #176c9e;
+}
+
+/* Table */
+
+.lifecycle-table {
+    flex: 1;
+}
+
+.lifecycle-table-header,
+.lifecycle-table-row {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr 1fr 1.3fr;
+    align-items: center;
+}
+
+.lifecycle-table-header {
+    min-height: 28px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #4b5157;
+}
+
+.lifecycle-table-row {
+    min-height: 31px;
+    border-bottom: 1px solid #edf0f2;
+    font-size: 11px;
+    color: #34495e;
+}
+
+.lifecycle-table-row:last-child {
+    border-bottom: none;
+}
+.stage-movement-card {
+    width: 700px;
+    margin-top: 30px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #e5e9ee;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.stage-movement-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.stage-movement-header h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #1f3550;
+}
+
+.stage-movement-header span {
+    margin-left: 6px;
+    font-size: 10px;
+    color: #687789;
+}
+
+.stage-movement-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+}
+
+.stage-movement-item {
+    min-height: 135px;
+    padding: 12px;
+    border-bottom: 1px solid #e5e9ee;
+    position: relative;
+}
+
+.stage-movement-item:nth-child(odd) {
+    border-right: 1px solid #e5e9ee;
+}
+
+.stage-movement-item:nth-child(3),
+.stage-movement-item:nth-child(4) {
+    border-bottom: none;
+}
+
+.stage-movement-item h3 {
+    margin: 0 0 5px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #34495e;
+}
+
+.movement-value {
+    font-size: 22px;
+    font-weight: 700;
+    color: #172b4d;
+    margin-bottom: 2px;
+}
+
+.movement-change {
+    font-size: 9px;
+    font-weight: 600;
+    color: #16834b;
+}
+
+.movement-change span {
+    font-weight: 400;
+    color: #687789;
+}
+
+.movement-chart {
+    width: 100%;
+    height: 45px;
+    margin-top: 4px;
+}
+.movement-0 .movement-change {
+    color: #16834b;
+}
+
+.movement-0 .movement-change span {
+    color: #687789;
+}
+
+.movement-1 .movement-change {
+    color: #e53935;
+}
+
+.movement-1 .movement-change span {
+    color: #687789;
+}
+
+.movement-2 .movement-change {
+    color: #1976d2;
+}
+
+.movement-2 .movement-change span {
+    color: #687789;
+}
+
+.movement-3 .movement-change {
+    color: #f39c12;
+}
+
+.movement-3 .movement-change span {
+    color: #687789;
+}
+
+/* =========================
+   HOW GOS CONNECTS
+========================= */
+
+.gos-connections-card {
+    width: 100%;
+    margin-top: 0;
+    box-sizing: border-box;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #e5e9ee;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.gos-connections-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.gos-connections-header h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #1f3550;
+}
+
+.gos-connections-header p {
+    margin: 3px 0 0;
+    font-size: 10px;
+    color: #687789;
+}
+
+
+/* Four columns */
+
+.gos-connections-columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    padding: 10px 0;
+}
+
+.gos-connection-column {
+    min-width: 0;
+}
+
+.gos-connection-column h3 {
+    margin: 0 0 10px;
+    font-size: 11px;
+    color: #34495e;
+    font-weight: 700;
+}
+
+
+/* Connection items */
+
+.gos-connection-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.gos-connection-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 22px;
+    padding: 3px 5px;
+    background: #f8fafc;
+    border-radius: 4px;
+    font-size: 9px;
+    color: #34495e;
+}
+
+.gos-connection-dot {
+    width: 7px;
+    height: 7px;
+    min-width: 7px;
+    border-radius: 50%;
+}
+
+
+/* Active relationships */
+
+.gos-relationships {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+    padding: 12px;
+    background: #f7f9fb;
+    border: 1px solid #e5e9ee;
+    border-radius: 6px;
+}
+
+.gos-relationships strong {
+    font-size: 20px;
+    color: #1f3550;
+}
+
+.gos-relationships span {
+    margin-top: 2px;
+    font-size: 9px;
+    color: #687789;
+}
+
+
+/* Description */
+
+.gos-connection-description {
+    margin-top: 10px;
+    padding: 10px;
+    background: #f1fbf4;
+    border: 1px solid #d9f2df;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 10px;
+    line-height: 1.5;
+    color: #16834b;
+}
+.gos-connection-lines {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    height: 20px;
+    align-items: center;
+}
+
+.connection-line {
+    height: 20px;
+    border-top: 2px solid #cfd8e3;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 8px;
+}
+
+.connection-line::after {
+    content: "";
+    position: absolute;
+    right: -1px;
+    top: -4px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 7px solid #cfd8e3;
+}
+@media (max-width: 900px) {
+    .gos-connections-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .gos-connections-columns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gos-connection-lines {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .gos-connections-columns {
+        grid-template-columns: 1fr;
+    }
+}
+.top-dashboard-row {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    gap: 10px;
+    width: 100%;
+    align-items: stretch;
+}
+
+.top-dashboard-row .actors-card,
+.top-dashboard-row .gos-connections-card,
+.top-dashboard-row .operating-units-card {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0;
+}
+.top-dashboard-row {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    gap: 10px;
+    width: 100%;
+    align-items: start;
+}
+
+
+.top-dashboard-row .actors-card,
+.top-dashboard-row .gos-connections-card,
+.top-dashboard-row .operating-units-card {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 0
+}
+
+
+.top-dashboard-row .operating-unit-row {
+    min-height: 20px;
+    padding: 3px 0;
+}
+
+.top-dashboard-row .operating-units-list {
+    gap: 2px;
+}
+
+.gos-connections-card {
+    padding: 10px;
+}
+
+.gos-connections-columns {
+    gap: 8px;
+    padding: 5px 0;
+}
+
+.gos-connection-column h3 {
+    margin: 0 0 6px;
+    font-size: 10px;
+}
+
+.gos-connection-list {
+    gap: 2px;
+}
+
+.gos-connection-item {
+    min-height: 18px;
+    padding: 2px 4px;
+    font-size: 8px;
+}
+
+.gos-connection-dot {
+    width: 6px;
+    height: 6px;
+    min-width: 6px;
+}
+
+.gos-connection-lines {
+    height: 12px;
+}
+
+.gos-relationships {
+    margin-top: 6px;
+    padding: 7px;
+}
+
+.gos-relationships strong {
+    font-size: 16px;
+}
+
+.gos-relationships span {
+    font-size: 8px;
+}
+
+.gos-connection-description {
+    margin-top: 6px;
+    padding: 6px;
+    font-size: 8px;
+}
+
+.second-dashboard-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+    align-items: start;
+}
+
+.second-dashboard-row > div {
+    width: 100%;
+    box-sizing: border-box;
+}
+.third-dashboard-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+    align-items: start;
+}
+
+.third-dashboard-row > div {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* =========================
+   READABILITY IMPROVEMENTS
+   ========================= */
+
+/* People / Actors */
+.actor-name {
+    font-size: 13px;
+}
+
+.actor-count {
+    font-size: 13px;
+}
+
+.actor-icon {
+    width: 19px;
+    height: 19px;
+}
+
+/* Operating Units */
+.operating-unit-name {
+    font-size: 13px;
+}
+
+.operating-unit-count {
+    font-size: 13px;
+}
+
+.operating-unit-icon {
+    width: 19px;
+    height: 19px;
+}
+
+/* Impact at a Glance */
+.metric-card h3 {
+    font-size: 11px;
+}
+
+.metric-card p {
+    font-size: 16px;
+}
+
+.metric-card span {
+    font-size: 10px;
+}
+
+.metric-subtext {
+    font-size: 9px;
+}
+
+/* Vatika Stage Distribution */
+.vatika-legend-row {
+    font-size: 12px;
+}
+
+.vatika-summary-box span {
+    font-size: 10px;
+}
+
+.vatika-summary-box strong {
+    font-size: 15px;
+}
+
+.vatika-summary-box small {
+    font-size: 10px;
+}
+
+.vatika-donut-total strong {
+    font-size: 22px;
+}
+
+.vatika-donut-total span {
+    font-size: 10px;
+}
+
+/* Vatika Lifecycle */
+.lifecycle-table-header {
+    font-size: 11px;
+}
+
+.lifecycle-table-row {
+    font-size: 12px;
+}
+
+/* Stage Movement */
+.stage-movement-item h3 {
+    font-size: 13px;
+}
+
+.movement-value {
+    font-size: 23px;
+}
+
+.movement-change {
+    font-size: 10px;
+}
+
+/* How GOS Connects */
+.gos-connection-column h3 {
+    font-size: 12px;
+}
+
+.gos-connection-item {
+    font-size: 10px;
+}
+
+.gos-connection-dot {
+    width: 8px;
+    height: 8px;
+    min-width: 8px;
+}
+
+.gos-relationships strong {
+    font-size: 18px;
+}
+
+.gos-relationships span {
+    font-size: 9px;
+}
+
+.gos-connection-description {
+    font-size: 9px;
+}
+
+/* Geographic Impact */
+.geographic-header h2 {
+    font-size: 18px;
+}
+
+.geographic-header select {
+    font-size: 12px;
+}
+
+.impact-legend {
+    font-size: 13px;
+}
+
+.impact-legend h4 {
+    font-size: 14px;
+}
+
+.geo-stat strong {
+    font-size: 16px;
+}
+
+.geo-stat span {
+    font-size: 12px;
+}
+
+/* Products & Value Chains */
+.products-header h2 {
+    font-size: 18px;
+}
+
+.view-all {
+    font-size: 12px;
+}
+
+.product-tabs button {
+    font-size: 13px;
+}
+
+.product-icon {
+    font-size: 21px;
+}
+
+.product-name {
+    font-size: 13px;
+}
+
+.product-count {
+    font-size: 17px;
+}
+
+.product-label {
+    font-size: 11px;
+}
+
+/* Training */
+.training-header h2 {
+    font-size: 18px;
+}
+
+.training-total strong {
+    font-size: 23px;
+}
+
+.training-total span {
+    font-size: 12px;
+}
+
+.training-legend-row {
+    font-size: 14px;
+}
+
+.training-dot {
+    width: 11px;
+    height: 11px;
+}
+
+/* P & L Overview */
+.pl-header h2 {
+    font-size: 18px;
+}
+
+.pl-tabs button {
+    font-size: 13px;
+}
+
+.pl-table-header {
+    font-size: 13px;
+}
+
+.pl-table-row {
+    font-size: 13px;
+}
+
+.pl-total-row {
+    font-size: 14px;
+}
+
+/* Explore GOS */
+.explore-gos-header h2 {
+    font-size: 18px;
+}
+
+.explore-gos-header p {
+    font-size: 12px;
+}
+
+.explore-content h3 {
+    font-size: 12px;
+}
+
+.explore-content p {
+    font-size: 10px;
+}
+
+.explore-icon {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    font-size: 20px;
+}
+
+.explore-arrow {
+    font-size: 14px;
+}
+
+
+/* =========================================
+   Larger & Bolder Dashboard Text
+   ========================================= */
+
+/* Card headings */
+.actors-header h2,
+.operating-units-header h2,
+.vatika-stages-header h2,
+.vatika-lifecycle-card h2,
+.stage-movement-header h2,
+.geographic-header h2,
+.products-header h2,
+.training-header h2,
+.pl-header h2,
+.explore-gos-header h2,
+.gos-connections-header h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Actors */
+.actor-name,
+.actor-count {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.actor-icon {
+    width: 21px;
+    height: 21px;
+}
+
+/* Operating Units */
+.operating-unit-name,
+.operating-unit-count {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.operating-unit-icon {
+    width: 21px;
+    height: 21px;
+}
+
+/* How GOS Connects */
+.gos-connection-column h3 {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.gos-connection-item {
+    font-size: 11px;
+    font-weight: 600;
+    min-height: 21px;
+}
+
+.gos-connection-dot {
+    width: 8px;
+    height: 8px;
+    min-width: 8px;
+}
+
+.gos-relationships strong {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.gos-relationships span {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.gos-connection-description {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+/* Vatika Stage */
+.vatika-legend-row {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.vatika-legend-row strong {
+    font-weight: 700;
+}
+
+.vatika-summary-box span {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.vatika-summary-box strong {
+    font-size: 15px;
+    font-weight: 800;
+}
+
+/* Lifecycle */
+.lifecycle-table-header {
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.lifecycle-table-row {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Stage Movement */
+.stage-movement-item h3 {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.movement-value {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.movement-change {
+    font-size: 10px;
+    font-weight: 700;
+}
+
+/* Geographic */
+.geographic-header select {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.impact-legend {
+    font-size: 13px;
+}
+
+.impact-legend h4 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.geo-stat strong {
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.geo-stat span {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Products */
+.product-tabs button {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.product-icon {
+    font-size: 22px;
+}
+
+.product-name {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.product-count {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.product-label {
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* Training */
+.training-total strong {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.training-total span {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.training-legend-row {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* P & L */
+.pl-tabs button {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.pl-table-header {
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.pl-table-row {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.pl-total-row {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+/* Explore GOS */
+.explore-content h3 {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.explore-content p {
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.explore-icon {
+    font-size: 21px;
+}
+
+/* Top metric cards */
+.metric-card h3 {
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.metric-card p {
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.metric-card span {
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.metric-subtext {
+    font-size: 9px;
+    font-weight: 600;
+}
+
+/* View All / View Details */
+.view-all,
+.actors-header .view-all,
+.operating-units-header .view-all,
+.vatika-stages-header .view-all {
+    font-size: 12px;
+    font-weight: 700;
+}
